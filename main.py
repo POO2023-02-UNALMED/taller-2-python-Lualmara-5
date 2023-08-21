@@ -21,7 +21,7 @@ class Auto:
         self.registro = registro
 
     def cantidadAsientos(self):
-        totalAsientos = 1
+        totalAsientos = 0
         for x in self.asientos:
             if (type(x) == Asiento):
                 totalAsientos += 1
