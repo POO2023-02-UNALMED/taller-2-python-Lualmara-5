@@ -6,7 +6,7 @@ class Asiento:
         self.registro = registro
     
     def cambiarColor(self, color):
-        if (color == 'rojo' or color == 'verde' or color == 'amarillo' or color == 'negro' or color == 'blanco'):
+        if color in ["rojo" ,"verde" ,"amarillo" ,"negro" ,"blanco"]:
             self.color = color
 
 class Auto:
@@ -38,3 +38,15 @@ class Auto:
             return "Las piezas no son originales"
 
 class Motor:
+
+    def __init__(self, numeroCilindros, tipo, registro):
+        self.numeroCilindros = numeroCilindros
+        self.tipo = tipo
+        self.registro = registro
+    
+    def cambiarRegistro(self, registro):
+        self.registro = registro
+
+    def asignarTipo(self, tipo):
+        if (tipo == 'electrico' or tipo == 'gasolina'):
+            self.tipo = tipo
